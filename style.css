@@ -1,0 +1,37 @@
+#cabecera{
+  background: linear-gradient(
+    rgba(34, 34, 34, 0.6), 
+    rgba(0, 0, 0, 0.6)
+  ), url("img/ba1.jpg");
+background-position: center ;
+background-size: cover;
+background-repeat: no-repeat;  
+height:600px;  
+}
+
+#texto {
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 50px;
+  font-weight: 100px;
+  padding-left: 950px;
+}
+
+#conoce {
+  background-color: rgb(76, 73, 73);
+ 
+}
+
+#formulario{
+  width:max-content;
+}
+
+#pie{
+  background:rgb(31, 77, 103);
+  height:120px;
+  font-size: 17px;
+  color: white; 
+  font-family: Arial;
+  font-weight: 300;
+}
