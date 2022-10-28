@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Comprar Tickets</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+  <!--Barra de navegacion-->
+  <header>
+    <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div id="menu"class="container-fluid" >
+          <a style="color:rgb(244, 248, 244); font-size: 30px;">
+            <img src="img/codoacodo.png" alt="Codo a Codo" width="90" height="90">
+            Conf BsAs
+          </a>
+          
+            <button class="navbar-toggler" type="menu" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto mb-2 mb-lg-O nav justify-content-end">
+              <a class="nav-link active" aria-current="page" href="#" style="color:rgb(244, 248, 244)">La Conferencia</a>
+              <a class="nav-link" href="#" style="color:rgb(244, 248, 244)">Los oradores</a>
+              <a class="nav-link" href="#" style="color:rgb(244, 248, 244)">Lugar y Fecha</a>
+              <a class="nav-link" href="#" style="color:rgb(244, 248, 244)">Conviertéte en orador</a>
+              <a class="nav-link" href="#" style="color:rgb(45, 216, 45)">Comprar Ticket</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container mt-3 mb-3">
+        <div class="d-flex justify-content-md-center row gx-2">
+            <div class="col-md-3">
+                <div class="card text-center border border-primary p-1 rounded-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Estudiante</h5>
+                        <p class="card-text">Tienen un descuento</p>
+                        <h6 class="card-text">80%</h6>
+                        <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center border border-success p-1 rounded-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Trainee</h5>
+                        <p class="card-text">Tienen un descuento</p>
+                        <h6 class="card-text">50%</h6>
+                        <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center border border-warning p-1 rounded-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Junior</h5>
+                        <p class="card-text">Tienen un descuento</p>
+                        <h6 class="card-text">15%</h6>
+                        <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    
+    <section class="container">
+      <h6 class="text-uppercase text-center">Venta</h6>
+      <h2 class="text-uppercase text-center">Valor de ticket $200</h2>
+      <div class="d-flex justify-content-around">
+          <form action="" name="formulario" class="col-md-9">
+              <div class="row g-3">
+                  <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                  </div>
+                  <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" >
+                  </div>
+                  <div class="col-12">
+                      <input type="email" class="form-control" placeholder="Correo" aria-label="Correo">
+                  </div>
+                  <div class="col-md-6">
+                      <label for="cantidad" class="mb-1">Cantidad </label>
+                      <input type="text" class="form-control" placeholder="" aria-label="Cantidad" id="cantidad">
+                      <!--<input type="number" class="form-control" placeholder="cantidad" aria-label="cantidad" name="cantidad" id="cantidad" min="1">-->
+                  </div>
+                  <div class="col-md-6">
+                      <label for="categoria" class="mb-1">Categoría</label>
+                      <select class="form-select" aria-label="categoria" name="categoria" id="categoria">
+                          <option value=1>Estudiante</option>
+                          <option value=2>Trainee</option>
+                          <option value=3>Junior</option>
+                      </select>
+                  </div>
+                  <div class="col-12">
+                  
+                   <div class="alert alert-primary" role="alert" id="pagar">
+                    
+                  </div>
+                  
+                      </div>
+                  <div class="col-6 d-grid">
+                      <button class="btn btn-success btn-enviar btn-block"  type="reset">Borrar</button>
+                  </div>
+                  <div class="col-6 d-grid">
+                      <button class="btn btn-success btn-enviar btn-block" type="button" onclick="mostrar();">Resumen</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </section>
+
+  <script src="total.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+<footer>
+    <br>
+    <div id="pie" class="container-fluid">
+     <div class="row text-center d-flex justify-content-center p-4 ">
+       <div class="col">
+         <a href="" class="nav-link">Preguntas Frecuentes</a>
+       </div>
+       <div class="col">
+         <a href="" class="nav-link">Contáctanos</a>
+       </div>
+       <div class="col">
+         <a href="" class="nav-link">Prensa</a>
+       </div>
+       <div class="col">
+         <a href="" class="nav-link">Conferencias</a>
+       </div>
+       <div class="col">
+         <a href="" class="nav-link">Terminos y condiciones</a>
+       </div>
+       <div class="col">
+         <a href="" class="nav-link">Privacidad</a>
+       </div>
+       <div class="col">
+         <a href="" class="nav-link">Estudiantes</a> 
+       </div>  
+     </div>
+   </div>
+    
+   </footer>      
+</html>
